@@ -1,0 +1,24 @@
+[project]
+name = "todo"
+version = "0.2.0"
+description = "ToDo app to develop skills with Python and package managers"
+authors = [
+    {name = "Antonio Vallejo", email = "antoniovallejo2612@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pylint >=3.3.7,<4.0.0",
+    "flake8 >=7.3.0,<8.0.0",
+    "tabulate >=0.9.0,<0.10.0"
+]
+
+[tool.poetry]
+packages = [{ include = "todo-app" }]
+
+[tool.poetry.scripts]
+runApplication = "todo-app.__init__:start"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

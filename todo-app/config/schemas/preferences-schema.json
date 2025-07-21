@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserPreferences",
+  "type": "object",
+  "properties": {
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "language": {
+          "type": "object",
+          "properties": {
+            "code": { "type": "string" },
+            "autoDetect": { "type": "boolean" }
+          },
+          "required": ["code", "autoDetect"]
+        }
+      },
+      "required": ["language"]
+    }
+  },
+  "required": ["preferences"]
+}

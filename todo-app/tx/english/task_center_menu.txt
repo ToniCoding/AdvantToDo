@@ -1,0 +1,1 @@
+Register task,View all tasks,View specific task,Edit task,Delete task,Exit task center,Exit program

@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "ToDoAppConfig",
+    "type": "object",
+    "properties": {
+        "software_info": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string",
+                    "pattern": "^\\d+\\.\\d+\\.\\d+$"
+                },
+                "release_date": {
+                    "type": "string"
+                },
+                "author": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "name",
+                "version",
+                "release_date",
+                "author",
+                "description"
+            ]
+        },
+        "app_config": {
+            "type": "object",
+            "properties": {
+                "internal_management": {
+                    "type": "object",
+                    "properties": {
+                        "month_directory_created": {
+                            "type": "boolean"
+                        },
+                        "amount_task_configurations": {
+                            "type": "integer"
+                        },
+                        "amount_software_info": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "month_directory_created",
+                        "amount_task_configurations",
+                        "amount_software_info"
+                    ]
+                },
+                "task_restrictions": {
+                    "type": "object",
+                    "properties": {
+                        "name_max_length": {
+                            "type": "integer"
+                        },
+                        "description_max_length": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [
+                        "name_max_length",
+                        "description_max_length"
+                    ]
+                }
+            },
+            "required": [
+                "internal_management",
+                "task_restrictions"
+            ]
+        }
+    },
+    "required": [
+        "software_info",
+        "app_config"
+    ]
+}

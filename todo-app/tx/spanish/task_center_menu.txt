@@ -1,0 +1,1 @@
+Registrar tarea,Ver todas las tareas,Ver tarea especifica,Editar tarea,Eliminar tarea,Salir del centro de tareas,Salir del programa

@@ -1,0 +1,20 @@
+{
+    "software_info": {
+        "name": "ToDo",
+        "version": "0.2.0",
+        "release_date": "Unreleased",
+        "author": "ToniCoding",
+        "description": "This is a ToDo application used to practice software architecture and advance OOP with a CLI interface."
+    },
+    "app_config": {
+        "internal_management": {
+            "month_directory_created": false,
+            "amount_task_configurations": 2,
+            "amount_software_info": 5
+        },
+        "task_restrictions": {
+            "name_max_length": 30,
+            "description_max_length": 50
+        }
+    }
+}
