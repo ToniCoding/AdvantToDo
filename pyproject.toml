@@ -1,6 +1,6 @@
 [project]
 name = "todo"
-version = "0.2.0"
+version = "0.3.0"
 description = "ToDo app to develop skills with Python and package managers"
 authors = [
     {name = "Antonio Vallejo", email = "antoniovallejo2612@gmail.com"}
@@ -17,7 +17,7 @@ dependencies = [
 packages = [{ include = "todo-app" }]
 
 [tool.poetry.scripts]
-runApplication = "todo-app.__init__:start"
+app = "todo-app.__init__:start"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
